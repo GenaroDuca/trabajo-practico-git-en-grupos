@@ -3,7 +3,7 @@ fetch("https://pokeapi.co/api/v2/pokemon?limit=100&offset=0")
 .then(resp => resp.json())
 .then (data => {
     //console.log(data)
-    contenedor.innerHTML = "<h1>Pokemon</h1>"
+    contenedor.innerHTML = "<h1>Pokémon</h1>"
     data.results.forEach(pokemon => {
             fetch(pokemon.url)
             .then(resp => resp.json())
